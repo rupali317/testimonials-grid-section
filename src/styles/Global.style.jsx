@@ -46,6 +46,11 @@ export const BaseStyles = createGlobalStyle`
 
         /* Shadows */
         --shadow-1: 2.5rem 3.75rem 3.125rem -2.9375rem var(--color-5); /* 40px 60px 50px -47px */
+
+        /* Opacity */
+        --opacity-1: 0.5;
+        --opacity-2: 0.7;
+        --opacity-3: 1;
     }
 
     @font-face {
@@ -115,9 +120,10 @@ export const ResetStyles = createGlobalStyle`
 export const DefaultStyles = createGlobalStyle`
     body {
         font-family: "BarlowSemiCondensed";
+        font-weight: var(--font-weight-medium);
     }
 
     .visually-hidden {
-        
+
     }
 `;
