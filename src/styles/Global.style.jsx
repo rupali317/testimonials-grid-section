@@ -47,6 +47,22 @@ export const BaseStyles = createGlobalStyle`
         /* Shadows */
         --shadow-1: 2.5rem 3.75rem 3.125rem -2.9375rem var(--color-5); /* 40px 60px 50px -47px */
     }
+
+    @font-face {
+        font-family: "BarlowSemiCondensed";
+        src: url("/fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: "BarlowSemiCondensed";
+        src: url("/fonts/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
 `;
 
 export const ResetStyles = createGlobalStyle`
@@ -96,4 +112,12 @@ export const ResetStyles = createGlobalStyle`
     }
 `;
 
-export const DefaultStyles = createGlobalStyle``;
+export const DefaultStyles = createGlobalStyle`
+    body {
+        font-family: "BarlowSemiCondensed";
+    }
+
+    .visually-hidden {
+        
+    }
+`;
