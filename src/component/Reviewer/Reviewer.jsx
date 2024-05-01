@@ -9,10 +9,10 @@ export const Reviewer = (props) => {
         role="presentation"
         $hasImageStroke={props.hasImageStroke}
       />
-      <p>{props.name}</p>
-      <p>
+      <span>{props.name}</span>
+      <span>
         {props.isVerifiedGraduate ? "Verified Graduate" : "Unverified user"}
-      </p>
+      </span>
     </section>
   );
 };

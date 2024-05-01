@@ -10,6 +10,7 @@ export const TestimonialCard = () => {
         $hasQuoteImage={item.hasQuoteImage}
         $isTextLightMode={item.isTextLightMode}
         $backgroundColor={item.backgroundColor}
+        $gridArea={item.gridArea}
       >
         <Reviewer
           isVerifiedGraduate={item.isVerifiedGraduate}
@@ -17,7 +18,7 @@ export const TestimonialCard = () => {
           imageUrl={item.imageUrl}
           hasImageStroke={item.hasImageStroke}
         />
-        <h2>{item.title}</h2>
+        <b>{item.title}</b>
         <q>{item.description}</q>
       </TestimonialCardStyles.Card>
     );
@@ -25,8 +26,11 @@ export const TestimonialCard = () => {
 
   return (
     <>
-      <h1 class="visually-hidden">Testimonials</h1>
-      <div>{cardList}</div>;
+      <h1 className="visually-hidden">Testimonials</h1>
+      <TestimonialCardStyles.CardList>
+        {cardList}
+      </TestimonialCardStyles.CardList>
+      ;
     </>
   );
 };
