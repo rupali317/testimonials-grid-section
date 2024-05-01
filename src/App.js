@@ -1,5 +1,7 @@
+import { TestimonialCard } from "./component/TestimonialCard/TestimonialCard";
+
 function App() {
-  return <div className="App"></div>;
+  return <TestimonialCard />;
 }
 
 export default App;
