@@ -18,8 +18,10 @@ export const TestimonialCard = () => {
           imageUrl={item.imageUrl}
           hasImageStroke={item.hasImageStroke}
         />
-        <b>{item.title}</b>
-        <q>{item.description}</q>
+        <TestimonialCardStyles.Title>{item.title}</TestimonialCardStyles.Title>
+        <TestimonialCardStyles.Description>
+          {item.description}
+        </TestimonialCardStyles.Description>
       </TestimonialCardStyles.Card>
     );
   });
@@ -30,7 +32,6 @@ export const TestimonialCard = () => {
       <TestimonialCardStyles.CardList>
         {cardList}
       </TestimonialCardStyles.CardList>
-      ;
     </>
   );
 };

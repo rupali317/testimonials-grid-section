@@ -119,11 +119,26 @@ export const ResetStyles = createGlobalStyle`
 
 export const DefaultStyles = createGlobalStyle`
     body {
+        background-color: var(--color-7);
+        display: flex;
+        justify-content: center;
         font-family: "BarlowSemiCondensed";
         font-weight: var(--font-weight-medium);
+        padding: var(--space-l-1);
+        opacity: var(--opacity-3);
     }
 
-    .visually-hidden {
-
+    main {
+        max-width: 20.4375rem; /* 327px */
     }
+
+    .visually-hidden:not(:focus):not(:active) { /* RRC: Test this */
+        clip: rect(0,0,0,0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+  }
 `;

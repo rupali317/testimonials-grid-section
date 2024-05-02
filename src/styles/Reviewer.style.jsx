@@ -15,14 +15,30 @@ export const Image = styled.img`
   border-radius: var(--border-radius-round);
   width: 1.75rem; /* 28px */
   height: 1.75rem; /* 28px */
-  ${(props) => {
-    if (props.$hasImageStroke) {
-      css`
-        outline: var(--border-width-m) solid var(--color-6);
-      `;
-    }
-  }}
+  ${(props) =>
+    css`
+      border: ${props.$hasImageStroke
+        ? "var(--border-width-m) solid var(--color-6)"
+        : "none"};
+    `}
 `;
+
+/* RRC: Check this */
+// ${(props) => {
+//     css`
+//       border: ${props.$hasImageStroke
+//         ? "var(--border-width-m) solid var(--color-6)"
+//         : "none"};
+//     `
+//   }}
+
+// ${(props) => {
+//     if (props.$hasImageStroke) {
+//       css`
+//         outline: var(--border-width-m) solid var(--color-6);
+//       `;
+//     }
+//   }}
 
 export const Name = styled.span`
   grid-area: area-name;
