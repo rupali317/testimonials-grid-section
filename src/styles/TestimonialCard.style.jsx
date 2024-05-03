@@ -36,6 +36,7 @@ export const Title = styled.b`
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-semi-bold);
   line-height: var(--line-height-normal);
+  margin-top: var(--space-xs-1);
 `;
 
 export const Description = styled.q`

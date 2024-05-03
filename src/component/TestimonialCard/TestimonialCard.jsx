@@ -17,6 +17,7 @@ export const TestimonialCard = () => {
           name={item.name}
           imageUrl={item.imageUrl}
           hasImageStroke={item.hasImageStroke}
+          imageStrokeColor={item.imageStrokeColor}
         />
         <TestimonialCardStyles.Title>{item.title}</TestimonialCardStyles.Title>
         <TestimonialCardStyles.Description>

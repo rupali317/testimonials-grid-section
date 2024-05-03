@@ -8,6 +8,7 @@ export const Reviewer = (props) => {
         alt=""
         role="presentation"
         $hasImageStroke={props.hasImageStroke}
+        $imageStrokeColor={props.imageStrokeColor}
       />
       <ReviewerStyles.Name>{props.name}</ReviewerStyles.Name>
       <ReviewerStyles.Status>

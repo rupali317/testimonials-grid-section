@@ -18,7 +18,7 @@ export const Image = styled.img`
   ${(props) =>
     css`
       border: ${props.$hasImageStroke
-        ? "var(--border-width-m) solid var(--color-6)"
+        ? `var(--border-width-m) solid ${props.$imageStrokeColor}`
         : "none"};
     `}
 `;
