@@ -1,4 +1,5 @@
 import { styled, css } from "styled-components";
+import { DesktopWidth } from "../constants/Breakpoints";
 
 export const CardList = styled.div`
   display: grid;
@@ -30,6 +31,13 @@ export const Card = styled.section`
         ? "url('/images/bg-pattern-quotation.svg')"
         : "none"};
     `}
+
+  @media (min-width: ${DesktopWidth}) {
+    gap: var(--space-m-1);
+    ${css`
+      background-position-x: calc(100% - var(--space-xl-3));
+    `};
+  }
 `;
 
 export const Title = styled.b`
@@ -37,10 +45,18 @@ export const Title = styled.b`
   font-weight: var(--font-weight-semi-bold);
   line-height: var(--line-height-normal);
   margin-top: var(--space-xs-1);
+
+  @media (min-width: ${DesktopWidth}) {
+    margin-top: var(--space-none);
+  }
 `;
 
 export const Description = styled.q`
   font-size: var(--font-size-s);
   line-height: var(--line-height-base);
   opacity: var(--opacity-2);
+
+  @media (min-width: ${DesktopWidth}) {
+    margin-top: var(--space-s-1);
+  }
 `;

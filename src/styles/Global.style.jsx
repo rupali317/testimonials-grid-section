@@ -37,6 +37,7 @@ export const BaseStyles = createGlobalStyle`
         --space-l-2: 1.625rem;/* 26px */
         --space-xl-1: 2rem;/* 32px */
         --space-xl-2: 2.5rem;/* 40px */
+        --space-xl-3: 5rem; /* 80px */
 
         /* Borders */
         --border-radius-none: 0rem;

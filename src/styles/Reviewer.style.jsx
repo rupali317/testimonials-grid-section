@@ -23,23 +23,6 @@ export const Image = styled.img`
     `}
 `;
 
-/* RRC: Check this */
-// ${(props) => {
-//     css`
-//       border: ${props.$hasImageStroke
-//         ? "var(--border-width-m) solid var(--color-6)"
-//         : "none"};
-//     `
-//   }}
-
-// ${(props) => {
-//     if (props.$hasImageStroke) {
-//       css`
-//         outline: var(--border-width-m) solid var(--color-6);
-//       `;
-//     }
-//   }}
-
 export const Name = styled.span`
   grid-area: area-name;
   font-size: var(--font-size-s);
