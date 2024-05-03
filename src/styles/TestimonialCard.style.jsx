@@ -24,9 +24,11 @@ export const Card = styled.section`
       grid-area: ${props.$gridArea};
       background-color: ${props.$backgroundColor};
       color: ${props.$isTextLightMode ? "var(--color-3)" : "var(--color-2)"};
+      background-repeat: no-repeat;
+      background-position-x: calc(100% - var(--space-l-1));
       background-image: ${props.$hasQuoteImage
-        ? "url('/images/bg-pattern-quotationn.svg')"
-        : "none"}; /* Work on this */
+        ? "url('/images/bg-pattern-quotation.svg')"
+        : "none"};
     `}
 `;
 
