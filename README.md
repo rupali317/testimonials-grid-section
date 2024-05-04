@@ -76,6 +76,7 @@ Users should be able to:
 ### Continued development
 
 - Investigate how to improve the performance (reduce layout shifts and improve the total blocking time).
+- Implementing this project in JS
 
 ### Useful resources
 
