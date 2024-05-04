@@ -10,6 +10,15 @@ export const CardList = styled.div`
     "PatrickAbrams"
     "KiraWhittle";
   row-gap: var(--space-l-1);
+
+  @media (min-width: ${DesktopWidth}) {
+    grid-template-areas:
+      "DanielClifford DanielClifford JonathanWalters KiraWhittle"
+      "JeanetteHarmon PatrickAbrams PatrickAbrams KiraWhittle";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: var(--space-l-1);
+    column-gap: var(--space-l-3);
+  }
 `;
 
 export const Card = styled.section`

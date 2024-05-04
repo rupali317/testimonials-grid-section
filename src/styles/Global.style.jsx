@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { DesktopWidth } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
     :root {
@@ -35,6 +36,7 @@ export const BaseStyles = createGlobalStyle`
         --space-m-2: 1.375rem;/* 22px */
         --space-l-1: 1.5rem;/* 24px */
         --space-l-2: 1.625rem;/* 26px */
+        --space-l-3: 1.875rem;/* 30px */
         --space-xl-1: 2rem;/* 32px */
         --space-xl-2: 2.5rem;/* 40px */
         --space-xl-3: 5rem; /* 80px */
@@ -127,6 +129,7 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-medium);
         padding: var(--space-l-1);
         opacity: var(--opacity-3);
+        align-items: center;
     }
 
     main {
@@ -141,5 +144,11 @@ export const DefaultStyles = createGlobalStyle`
         position: absolute;
         white-space: nowrap;
         width: 1px;
+  }
+
+  @media(min-width: ${DesktopWidth}) {
+    main {
+        max-width: 69.375rem; /* 1110px */
+    }
   }
 `;
