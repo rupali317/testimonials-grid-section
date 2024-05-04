@@ -52,8 +52,8 @@ export const BaseStyles = createGlobalStyle`
         --shadow-2: 0rem 0rem 0rem 0.125rem; /* 0px 0px 0px 2px */
 
         /* Opacity */
-        --opacity-1: 0.5;
-        --opacity-2: 0.7;
+        --opacity-1: 0.8;
+        --opacity-2: 0.9;
         --opacity-3: 1;
     }
 
