@@ -17,8 +17,8 @@ export const Image = styled.img`
   height: 1.75rem; /* 28px */
   ${(props) =>
     css`
-      outline: ${props.$hasImageStroke
-        ? `var(--border-width-m) solid ${props.$imageStrokeColor}`
+      box-shadow: ${props.$hasImageStroke
+        ? `var(--shadow-2) ${props.$imageStrokeColor}`
         : "none"};
     `}
 `;
