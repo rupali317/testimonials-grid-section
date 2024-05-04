@@ -39,6 +39,7 @@ export const Card = styled.section`
       background-image: ${props.$hasQuoteImage
         ? "url('/images/bg-pattern-quotation.svg')"
         : "none"};
+      background-size: 6.5rem 6.375rem; /* 104px 102px */ /* RRC check this */
     `}
 
   @media (min-width: ${DesktopWidth}) {

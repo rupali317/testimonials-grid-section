@@ -7,6 +7,8 @@ export const Reviewer = (props) => {
         src={props.imageUrl}
         alt=""
         role="presentation"
+        width="28"
+        height="28"
         $hasImageStroke={props.hasImageStroke}
         $imageStrokeColor={props.imageStrokeColor}
       />
