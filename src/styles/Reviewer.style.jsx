@@ -17,7 +17,7 @@ export const Image = styled.img`
   height: 1.75rem; /* 28px */
   ${(props) =>
     css`
-      border: ${props.$hasImageStroke
+      outline: ${props.$hasImageStroke
         ? `var(--border-width-m) solid ${props.$imageStrokeColor}`
         : "none"};
     `}
