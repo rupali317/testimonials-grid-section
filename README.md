@@ -14,7 +14,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Tested with](#tested-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -26,7 +25,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size.
 
 ### Screenshots
 
@@ -70,21 +69,13 @@ Users should be able to:
 
 - Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge.
 - Devices:
-  - (Real) MacBook Pro (15-inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+, iPad Air 2, MacBook Pro (13-inch)
+  - (Real) MacBook Pro (15-inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+, iPad Air 2, MacBook Pro (13-inch).
   - (Virtual) The mobile and tablet devices mentioned under Chrome's dev console.
 - Screen reader: MacOS VoiceOver.
 
-### What I learned
-
-TBD
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ### Continued development
 
-TBD
+- Investigate how to improve the performance (reduce layout shifts and improve the total blocking time).
 
 ### Useful resources
 
