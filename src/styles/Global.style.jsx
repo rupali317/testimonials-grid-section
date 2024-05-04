@@ -146,6 +146,14 @@ export const DefaultStyles = createGlobalStyle`
         width: 1px;
   }
 
+  q:before {
+      margin-right: var(--space-xs-2);
+  }
+
+  q:after {
+      margin-left: var(--space-xs-2);
+  }
+
   @media(min-width: ${DesktopWidth}) {
     main {
         max-width: 69.375rem; /* 1110px */
